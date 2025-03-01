@@ -31,6 +31,13 @@ exports.handler = async (event, context) => {
         filter_name: filter.filterName,
       });
       if (filterName) {
+        if (
+          JSON.stringify(filterName.filters_values) ===
+          JSON.stringify(filter.filterValues)
+        ) {
+          console.log("No changes to", filter.filterName);
+          continue; // if no changes skip to next
+        }
         filterName.filter_values = filter.filterValues; // update array of filter values
         await filterName.save();
       } else {
