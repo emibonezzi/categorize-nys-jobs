@@ -21,6 +21,7 @@ exports.handler = async (event, context) => {
       const uniqueResults = [...new Set(allResults)];
       filters.push({
         filterName: filter.categoryName,
+        filterField: filter.filterName,
         filterValues: uniqueResults,
       });
     }
@@ -43,6 +44,7 @@ exports.handler = async (event, context) => {
       } else {
         const newFilter = new Filter({
           filter_name: filter.filterName,
+          filter_field: filter.filterField,
           filters_values: filter.filterValues,
         }); // create new filter
         await newFilter.save();
