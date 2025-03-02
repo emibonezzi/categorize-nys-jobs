@@ -1,23 +1,31 @@
 const filtersList = [
   {
     filterName: "city",
-    categoryName: "cities",
+    categoryName: "City",
   },
   {
     filterName: "county",
-    categoryName: "counties",
+    categoryName: "County",
   },
   {
     filterName: "agency",
-    categoryName: "agencies",
+    categoryName: "Agency",
   },
   {
     filterName: "occupational_category",
-    categoryName: "categories",
+    categoryName: "Job Category",
   },
   {
     filterName: "travel_percentage",
-    categoryName: "travel_percentage",
+    categoryName: "Travel Percentage",
+  },
+  {
+    filterName: "ny_help",
+    categoryName: "NY HELPS",
+  },
+  {
+    filterName: "employment_type",
+    categoryName: "Employment Type",
   },
 ];
 

@@ -55,4 +55,4 @@ exports.handler = async (event, context) => {
   }
 };
 
-exports.handler();
+// exports.handler();
