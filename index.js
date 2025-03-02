@@ -20,7 +20,7 @@ exports.handler = async (event, context) => {
       const allResults = jobs.map((job) => job[filter.filterName]);
       const uniqueResults = [...new Set(allResults)];
       filters.push({
-        filterName: filter.filterName,
+        filterName: filter.categoryName,
         filterValues: uniqueResults,
       });
     }
