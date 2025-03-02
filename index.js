@@ -38,7 +38,7 @@ exports.handler = async (event, context) => {
           console.log("No changes to", filter.filterName);
           continue; // if no changes skip to next
         }
-        filterName.filter_values = filter.filterValues; // update array of filter values
+        filterName.filters_values = filter.filterValues; // update array of filter values
         await filterName.save();
       } else {
         const newFilter = new Filter({
