@@ -1,31 +1,35 @@
 const filtersList = [
   {
-    filterName: "city",
-    categoryName: "City",
+    filterName: "macroArea",
+    categoryName: "Macro Area",
   },
   {
-    filterName: "county",
-    categoryName: "County",
+    filterName: "nyRegion",
+    categoryName: "New York Region",
   },
   {
-    filterName: "agency",
-    categoryName: "Agency",
+    filterName: "educationalRequirements",
+    categoryName: "Education & Qualifications",
   },
   {
     filterName: "occupational_category",
     categoryName: "Job Category",
   },
   {
-    filterName: "travel_percentage",
-    categoryName: "Travel Percentage",
-  },
-  {
     filterName: "ny_help",
-    categoryName: "NY HELPS",
+    categoryName: "NY HELPS (No Exam Required)",
   },
   {
     filterName: "employment_type",
     categoryName: "Employment Type",
+  },
+  {
+    filterName: "workExperienceRequirements",
+    categoryName: "Required Experience (Years)",
+  },
+  {
+    filterName: "salaryRange",
+    categoryName: "Salary Range",
   },
 ];
 
